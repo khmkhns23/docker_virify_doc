@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --navy-primary: #1d3557;
+    --navy-secondary: #457b9d;
+    --navy-dark: #0f1c2e;
+    --navy-light: #f1faee;
+    --accent-red: #e63946;
+    --accent-green: #2a9d8f;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Typography styles matching TH Sarabun look */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--navy-dark);
+}
+
+/* Navy Color Helpers */
+.bg-navy {
+    background-color: var(--navy-primary) !important;
+}
+
+.bg-navy-dark {
+    background-color: var(--navy-dark) !important;
+}
+
+.bg-navy-light {
+    background-color: #ebf1fa !important;
+}
+
+.text-navy {
+    color: var(--navy-primary) !important;
+}
+
+.text-navy-dark {
+    color: var(--navy-dark) !important;
+}
+
+/* Custom Navy Button */
+.btn-navy {
+    background-color: var(--navy-primary);
+    border-color: var(--navy-primary);
+    color: white;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-navy:hover, .btn-navy:focus {
+    background-color: var(--navy-dark);
+    border-color: var(--navy-dark);
+    color: white;
+    box-shadow: 0 4px 8px rgba(29, 53, 87, 0.25);
+}
+
+.btn-outline-navy {
+    color: var(--navy-primary);
+    border-color: var(--navy-primary);
+    background-color: transparent;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-navy:hover, .btn-outline-navy:active {
+    background-color: var(--navy-primary);
+    color: white;
+    border-color: var(--navy-primary);
+}
+
+/* Premium Card Design */
+.card-premium {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    background: white;
+    margin-bottom: 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-premium:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-premium .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid #f1f2f5;
+    padding: 16px 24px;
+    font-weight: 600;
+}
+
+.card-premium .card-body {
+    padding: 24px;
+}
+
+/* Stats Widget Card */
+.card-stats {
+    border-left: 4px solid var(--navy-primary);
+}
+
+.card-stats.stats-pending {
+    border-left-color: #ffb703;
+}
+
+.card-stats.stats-processing {
+    border-left-color: var(--navy-secondary);
+}
+
+.card-stats.stats-completed {
+    border-left-color: var(--accent-green);
+}
+
+.card-stats.stats-failed {
+    border-left-color: var(--accent-red);
+}
+
+/* Table Enhancements */
+.table-premium th {
+    background-color: var(--navy-primary);
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+.table-premium td {
+    vertical-align: middle;
+}
+
+/* Badges */
+.badge-status {
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* Sidebar styling for Admin/User */
+.sidebar {
+    min-height: 100vh;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+
+.sidebar .nav-link {
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin: 4px 10px;
+    transition: all 0.2s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.sidebar .nav-link.active {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    font-weight: 600;
+}
+
+/* Upload zone */
+.upload-zone {
+    border: 2px dashed var(--navy-secondary);
+    background-color: rgba(69, 123, 157, 0.05);
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.upload-zone:hover {
+    background-color: rgba(69, 123, 157, 0.1);
+    border-color: var(--navy-primary);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--navy-secondary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--navy-primary);
+}
